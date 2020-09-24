@@ -4,7 +4,8 @@ if(params.has('url')) {
 	if(!(url.startsWith('http://') || url.startsWith('https://'))) {
 		url += 'http://';
 	}
-	location.href = url;
+	document.write(url);
+	// location.href = url;
 } else {
 	document.write('<h3>Invalid URL</h3>');
 }
